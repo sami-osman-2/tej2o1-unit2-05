@@ -1,24 +1,19 @@
+# TEJ2O ⇢ Unit #2-05
 
-> Open this page at [https://sami-osman-2.github.io/tej2o1-unit2-05/](https://sami-osman-2.github.io/tej2o1-unit2-05/)
+[![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)](./LICENSE)
 
-## Use as Extension
 
-This repository can be added as an **extension** in MakeCode.
+## To lint your python code
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/sami-osman-2/tej2o1-unit2-05** and import
+Run the following command in the terminal, where your *.py file is located:
 
-## Edit this project
+```console
+black --check --diff ./*.py
+```
+## To Build *.hex for Micro:bit using MicroPython
 
-To edit this repository in MakeCode.
+Run the following command in the terminal, where your *.py file is located:
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/sami-osman-2/tej2o1-unit2-05** and click import
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+``` bash
+py2hex ./main.py
+```
